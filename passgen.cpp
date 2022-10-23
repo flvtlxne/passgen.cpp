@@ -21,12 +21,12 @@ int main()
     cin >> Characters;
     const unsigned short SaveCharacters = Characters;
 
-    ofstream outFile('GenPass.txt');
+    ofstream outFile("GenPass.txt");
         for(; Passwords > 0; Passwords--)
         {
             for(; Characters > 0; Characters--) 
             {
-                outFile << test[rand() % size];
+                outFile << test[rand() % Size];
             }
             
             if (Characters == 0)
